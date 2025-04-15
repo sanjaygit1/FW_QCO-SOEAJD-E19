@@ -32,11 +32,12 @@ public class BaseClass {
 		System.out.println("Parallel Exceution ");
 	}
 
-	@Parameters("BROWSER")
+	//pullone
+//	@Parameters("BROWSER")
 	@BeforeClass(groups = { "smokeTest", "regressionTest", "sanityTest" })
-	public void beforeClass(String BROWSER) throws Throwable {
-//		File_Utility flib = new File_Utility();
-//		String BROWSER = flib.getKeyAndValuePair("browser");
+	public void beforeClass() throws Throwable {
+		File_Utility flib = new File_Utility();
+		String BROWSER = flib.getKeyAndValuePair("browser");
 
 		// cmd prompt
 //		String BROWSER = System.getProperty("browser");
