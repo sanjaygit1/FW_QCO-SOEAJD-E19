@@ -20,6 +20,7 @@ import Object_Repo.LoginPage;
 public class BaseClass {
 
 	//pushBack
+	//pullBack
 	public WebDriver driver;
 	public static WebDriver sdriver;
 
