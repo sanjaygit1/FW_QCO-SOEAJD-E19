@@ -87,7 +87,7 @@ public class CreateCampWithProductTest extends BaseClass {
 		campPage.clickSaveButton();
 
 		CampValidation validate = new CampValidation(driver);
-		validate.validateCamp(driver, CampName);
+		validate.validateCamp(driver);
 		validate.validatePrd(driver, prdName);
 
 	}

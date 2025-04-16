@@ -58,9 +58,9 @@ public class CreateCampaignsTest extends BaseClass {
 		camp.clickSaveButton();
 
 		CampValidation validate = new CampValidation(driver);
-		String actData = validate.validateCamp(driver, CampName);
+		String actData = validate.validateCamp(driver);
 
-		Assert.assertEquals(actData, CampName);
+		Assert.assertEquals(actData, CampName,"AssertFail");
 		System.out.println("Assert pass");
 	}
 
