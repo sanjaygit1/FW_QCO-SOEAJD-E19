@@ -19,7 +19,7 @@ public class HardAssertEx {
 	public void m1() {
 		System.out.println("Step1");
 		System.out.println("Step2");
-		Assert.assertEquals("A", "A");
+		Assert.assertEquals("A", "B");
 		System.out.println("Step3");
 		System.out.println("Step4");
 	}
@@ -34,8 +34,8 @@ public class HardAssertEx {
 	@Test
 	public void m3() {
 		int exp = 10;
-		int act = 20;
-		Assert.assertEquals(act, exp, "Assert are not Equal");
+		int act = 10;
+		Assert.assertEquals(act, exp, "Assert nOt Equal");
 		System.out.println("AssertPass");
 	}
 
@@ -62,7 +62,7 @@ public class HardAssertEx {
 		String exp = "Qspiders";
 		String act = "Qspiders";
 		Assert.assertTrue(act.equalsIgnoreCase(exp), "AssertFail");
-		System.out.println("Assert Pass");
+       System.out.println("Assert Pass");
 	}
 
 	@Test
@@ -93,6 +93,7 @@ public class HardAssertEx {
 	public void m10() {
 		String s = null;
 		Assert.assertNull(s, "value is not Null");
+	
 		System.out.println(" value it is Null");
 	}
 

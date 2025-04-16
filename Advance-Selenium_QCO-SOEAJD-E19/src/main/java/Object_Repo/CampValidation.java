@@ -13,10 +13,12 @@ public class CampValidation {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String validateCamp(WebDriver driver,String campName)
+	public String validateCamp(WebDriver driver)
 	{
-		 return driver.findElement(By.xpath("//span[@id=\"dtlview_Campaign Name\"]")).getText();
+		 
+		String actdata = driver.findElement(By.xpath("//span[@id=\"dtlview_Campaign Name\"]")).getText();
 
+		return actdata;
 //		if (actData.equals(campName)) {
 //			System.out.println("Campaign name is created");
 //		} else {
