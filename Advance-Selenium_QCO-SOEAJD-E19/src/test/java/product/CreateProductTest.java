@@ -14,6 +14,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Generic_Utilities.BaseClass;
@@ -28,6 +30,7 @@ import Object_Repo.LoginPage;
 import Object_Repo.PrdLookUpImg;
 import Object_Repo.ProductVAlidation;
 
+@Listeners(Generic_Utilities.ExtentReportImp.class)
 public class CreateProductTest extends BaseClass {
 
 	@Test(groups = {"regressionTest"})
@@ -49,6 +52,7 @@ public void createProductTest()	 throws Throwable {
 		CreatePrdPage prdPage = new CreatePrdPage(driver);
 		prdPage.enterPrdDetails(prdName);
 
+		Assert.fail("im failing the script");
 		ProductVAlidation validate = new ProductVAlidation(driver);
 		validate.validatePrd(driver, prdName);
 

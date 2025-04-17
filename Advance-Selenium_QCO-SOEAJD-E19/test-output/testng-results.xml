@@ -2,23 +2,39 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-16T15:07:24 IST" name="Default suite" finished-at="2025-04-16T15:07:24 IST" duration-ms="134">
+  <suite started-at="2025-04-17T15:24:50 IST" name="Default suite" finished-at="2025-04-17T15:25:16 IST" duration-ms="25818">
     <groups>
+      <group name="regressionTest">
+        <method signature="CreateProductTest.createProductTest()[pri:0, instance:product.CreateProductTest@6e535154]" name="createProductTest" class="product.CreateProductTest"/>
+      </group> <!-- regressionTest -->
     </groups>
-    <test started-at="2025-04-16T15:07:24 IST" name="Default test" finished-at="2025-04-16T15:07:24 IST" duration-ms="134">
-      <class name="TestNg.SoftAssertEx">
-        <test-method signature="m1()[pri:0, instance:TestNg.SoftAssertEx@14028087]" started-at="2025-04-16T15:07:24 IST" name="m1" finished-at="2025-04-16T15:07:24 IST" duration-ms="42" status="FAIL">
+    <test started-at="2025-04-17T15:24:50 IST" name="Default test" finished-at="2025-04-17T15:25:16 IST" duration-ms="25818">
+      <class name="product.CreateProductTest">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:24:50 IST" name="beforeSuite" finished-at="2025-04-17T15:24:50 IST" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:24:51 IST" name="beforeTest" finished-at="2025-04-17T15:24:51 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:24:51 IST" name="beforeClass" finished-at="2025-04-17T15:24:55 IST" duration-ms="4150" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:24:55 IST" name="beforeMethod" finished-at="2025-04-17T15:24:59 IST" duration-ms="4146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createProductTest()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:24:59 IST" name="createProductTest" finished-at="2025-04-17T15:25:12 IST" duration-ms="13199" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The following asserts failed:
-expected [false] but found [true]]]>
+              <![CDATA[im failing the script]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-expected [false] but found [true]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at TestNg.SoftAssertEx.m1(SoftAssertEx.java:27)
+              <![CDATA[java.lang.AssertionError: im failing the script
+at org.testng.Assert.fail(Assert.java:111)
+at product.CreateProductTest.createProductTest(CreateProductTest.java:55)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -52,8 +68,24 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- TestNg.SoftAssertEx -->
+        </test-method> <!-- createProductTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:25:13 IST" name="afterMethod" finished-at="2025-04-17T15:25:14 IST" duration-ms="1465" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:25:14 IST" name="afterClass" finished-at="2025-04-17T15:25:16 IST" duration-ms="1691" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:25:16 IST" name="afterTest" finished-at="2025-04-17T15:25:16 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:product.CreateProductTest@6e535154]" started-at="2025-04-17T15:25:16 IST" name="afterSuite" finished-at="2025-04-17T15:25:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- product.CreateProductTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
