@@ -29,6 +29,7 @@ public class ExtentReportImp implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		test.log(Status.FAIL, result.getMethod().getMethodName());
 		test.log(Status.FAIL, result.getThrowable());
+		
 		String screenShot = null;
 		try {
 			screenShot = WebDriver_Utility.takeScreenShotEx(BaseClass.sdriver, result.getMethod().getMethodName());
